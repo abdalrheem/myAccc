@@ -1,4 +1,19 @@
-.cards {
+.warpper {
+    max-height: 500px;
+    border: 1px solid #1f98f4;
+    display: flex;
+    overflow-x: auto;
+}
+
+.warpper::-webkit-scrollbar {
+    width: 0;
+}
+
+.warpper .item {
+    min-width: 300px;
+    margin: 10px;
+    text-align: center;
+}.cards {
     padding: 4rem;
 }
 
