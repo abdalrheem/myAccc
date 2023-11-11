@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import ServicesSection from "./ServicesSection";
 import ProjectsSection from "./ProjectsSection";
 import Footer from "./Footer";
-import Partners from "./Partners";
 
 const Home = () => {
   return (
@@ -14,7 +13,6 @@ const Home = () => {
       <Navbar />
       <AboutUSSecion />
       <ServicesSection />
-      <Partners />
       <ProjectsSection />
       <Footer />
     </>
