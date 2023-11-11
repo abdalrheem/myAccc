@@ -1,0 +1,23 @@
+.hover-div {
+    background: linear-gradient(to right, #f1f3f4 50%, #58b6de 50%);
+    /* Set initial and hover colors using gradient */
+    background-size: 200% 100%;
+    /* Double the background size for the transition effect */
+    transition: background-position 0.3s ease;
+    /* Add a smooth transition for background position */
+}
+
+.hover-div:hover {
+    background-position: -100% 0;
+    /* Move the background to the right on hover */
+}
+.image-container:hover  {
+    transform: scale(1.2);
+    /* Increase the scale on hover for the zoom effect */
+}
+.image-container  {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    /* Add a smooth transition for the zoom effect */
+}

@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import "./ServiceCard.css";
 interface Props {
   text: string;
   label: string;
@@ -18,6 +19,7 @@ const ServiceCard = ({ text, label, Imgsrc }: Props) => {
   return (
     <Center py={6}>
       <Box
+        className="hover-div"
         maxW={"445px"}
         w={"full"}
         // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -35,7 +37,7 @@ const ServiceCard = ({ text, label, Imgsrc }: Props) => {
           mb={6}
           pos={"relative"}
         >
-          <Image src={Imgsrc} alt="Example" />
+          <Image className="image-container" src={Imgsrc} alt="Example" />
         </Box>
         <Stack>
           <Heading

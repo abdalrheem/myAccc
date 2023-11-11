@@ -76,8 +76,14 @@ function Navbar() {
           <br />
           <br />
           <br />
-          <h1>Acorac Group</h1>
-          <p>What are you waiting for?</p>
+          <div className="patterns">
+            <svg width="100%" height="100%">
+              <text x="50%" y="60%" textAnchor="middle">
+                Acorac
+              </text>
+            </svg>
+          </div>
+          <p className="word">What are you waiting for?</p>
           <div className="hero-btns">
             <Button className="btns btn--outline btn--large">
               GET STARTED

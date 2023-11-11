@@ -1,14 +1,38 @@
-.warpper {
-    max-height: 500px;
-    border: 1px solid #1f98f4;
-    display: flex;
-    overflow-x: auto;
+.wrapper {
+    /* Set the width of your container */
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
 }
 
-.warpper::-webkit-scrollbar {
-    width: 0;
+.scroll-content {
+    display: inline-flex;
+    animation: auto-scroll 80s linear infinite;
+    /* Adjust the duration as needed */
 }
 
+.scroll-item {
+    min-width: 100px;
+    /* Set a minimum width for each item */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+@keyframes auto-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+}
+
+.wrapper:hover .scroll-content {
+    animation-play-state: paused;
+}
 .warpper .item {
     min-width: 300px;
     margin: 10px;
